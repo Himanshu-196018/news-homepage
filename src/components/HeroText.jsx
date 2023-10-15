@@ -2,7 +2,7 @@
 
 const HeroText = () => {
   return (
-    <div>
+    <div className="hero-text">
       <h2>The Bright Future of Web 3.0?</h2>
       <div>
         <p>

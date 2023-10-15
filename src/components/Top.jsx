@@ -5,7 +5,7 @@ import SideNews from "./SideNews";
 
 const Top = () => {
   return (
-    <section>
+    <section className="top-section">
       <div className="hero-section">
         <HeroImage />
         <HeroText />

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-orange: hsl(35, 77%, 62%);
+  --clr-red: hsl(5, 85%, 63%);
+  --clr-off-white: hsl(36, 100%, 99%);
+  --clr-grayish-blue: hsl(233, 8%, 79%);
+  --clr-dark-grayish-blue: hsl(236, 13%, 42%);
+  --clr-dark-blue: hsl(240, 100%, 5%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1;
+}
+
+html {
+  font-family: Inter;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  background-color: var(--clr-off-white);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 1110px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-link {
+  display: inline-block;
+  padding-block: 1rem;
+  padding-left: 3.5rem;
+  color: var(--clr-dark-blue);
+  text-decoration: none;
+}
+
+.top-section {
+  margin-top: 5.6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.hero-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.7rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-block: 3.4rem 0.8rem;
+}
+.hero-text h2 {
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 1.04;
+}
+
+aside {
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 35rem;
+  max-height: 51.1rem;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-off-white);
+  justify-self: flex-end;
+}
+
+aside h2 {
+  font-size: 3.7rem;
+}
+
+.bottom-section {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-card {
+  display: flex;
+  width: 31.5%;
+}
+
+.news-card img {
+  width: 100px;
+}
