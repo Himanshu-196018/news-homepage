@@ -38,19 +38,20 @@ body {
   font-size: 1.5rem;
   letter-spacing: 1px;
   background-color: var(--clr-off-white);
+  color: var(--clr-dark-blue);
   min-height: 100vh;
-  display: grid;
-  place-content: center;
 }
 
 #root {
-  width: 100%;
+  width: calc(100% - 3rem);
   max-width: 1110px;
+  margin-inline: auto;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  margin-top: 8.8rem;
 }
 
 ul {
@@ -67,7 +68,7 @@ ul {
 }
 
 .top-section {
-  margin-top: 5.6rem;
+  margin-top: 5.5rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
@@ -76,10 +77,11 @@ ul {
 .hero-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 2.7rem;
+  column-gap: 3rem;
   line-height: 1.5;
   letter-spacing: 0;
-  margin-block: 3.4rem 0.8rem;
+  margin-top: 3.4rem;
+  min-height: 17.8rem;
 }
 .hero-text h2 {
   font-size: 5.5rem;
@@ -87,11 +89,28 @@ ul {
   line-height: 1.04;
 }
 
+.hero-text div {
+  display: grid;
+  align-content: space-between;
+}
+
+.btn {
+  display: inline;
+  width: 18.6rem;
+  padding: 1.3rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  background-color: var(--clr-red);
+}
+
 aside {
-  padding: 3rem 2.5rem;
+  padding: 3rem 2.5rem 0;
   width: 100%;
   max-width: 35rem;
-  max-height: 51.1rem;
+  min-height: 51.1rem;
+  display: grid;
+  justify-content: space-between;
   background-color: var(--clr-dark-blue);
   color: var(--clr-off-white);
   justify-self: flex-end;
@@ -101,17 +120,92 @@ aside h2 {
   font-size: 3.7rem;
 }
 
+hr {
+  height: 1px;
+}
+
+.box {
+  margin-block: 3.2rem;
+}
+
+.box h3 {
+  letter-spacing: 1.5px;
+}
+
+.box p {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
 .bottom-section {
-  margin-top: 7rem;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 7.1rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(34rem, 1fr));
 }
 
 .news-card {
+  width: 100%;
   display: flex;
-  width: 31.5%;
+  gap: 2.5rem;
 }
 
 .news-card img {
   width: 100px;
+}
+
+.info {
+  display: grid;
+  justify-content: space-between;
+}
+
+.info span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--clr-grayish-blue);
+}
+
+.info a {
+  font-size: 1.64rem;
+  font-weight: 800;
+}
+
+.info p {
+  letter-spacing: 0;
+  line-height: 1.6;
+  align-self: flex-end;
+}
+
+@media screen and (width < 880px) {
+  .top-section {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  aside {
+    max-width: 100%;
+  }
+}
+
+@media screen and (width < 700px) {
+  header {
+    margin-top: 3rem;
+  }
+
+  header img {
+    height: 3rem;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+  }
+
+  .top-section {
+    margin-top: 2.8rem;
+  }
+
+  .hero-text {
+    grid-template-columns: 1fr;
+  }
 }
