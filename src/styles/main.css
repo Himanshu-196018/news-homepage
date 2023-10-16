@@ -55,6 +55,7 @@ body {
   letter-spacing: 1px;
   background-color: var(--clr-off-white);
   color: var(--clr-dark-blue);
+  min-width: 100vh;
 }
 
 #root {
