@@ -28,7 +28,7 @@ const Bottom = () => {
       </div>
 
       <div className="news-card">
-        <img src="/images/image-gaming-growth.jpg" alt="" />
+        <img src="/images/image-gaming-growth.jpg" alt="Gaming console" />
 
         <div className="info">
           <span>03</span>

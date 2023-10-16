@@ -118,6 +118,7 @@ ul {
   font-weight: 700;
   background-color: var(--clr-red);
   color: var(--clr-off-white);
+  text-decoration: none;
 
   &:hover {
     background-color: var(--clr-dark-blue);

@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <header>
-      <img src="/images/logo.svg" />
+      <img src="/images/logo.svg" alt="W. news logo" />
       <h1 className="sr-only">World News</h1>
       <nav>
         {isMobile && <Button isActive={isActive} handleClick={handleClick} />}
