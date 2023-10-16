@@ -70,10 +70,6 @@ header {
   justify-content: space-between;
 }
 
-header img {
-  height: 3rem;
-}
-
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -83,7 +79,8 @@ ul {
 
 .nav-link {
   display: inline-block;
-  margin: 1rem 3.5rem;
+  margin: 1rem 0 1rem 3.5rem;
+  letter-spacing: 1px;
   color: var(--clr-dark-grayish-blue);
   text-decoration: none;
 }
@@ -100,7 +97,7 @@ ul {
 .top-section {
   margin-top: 2.8rem;
   display: grid;
-  grid-gap: 4rem;
+  grid-gap: 1.6rem;
 }
 
 .hero-text {
@@ -154,6 +151,7 @@ aside {
 
 aside h2 {
   font-size: 3.7rem;
+  letter-spacing: 1px;
   color: var(--clr-orange);
 }
 
@@ -206,6 +204,7 @@ hr {
 
 .info a {
   font-size: 1.64rem;
+  letter-spacing: 1px;
   font-weight: 800;
 }
 
@@ -216,10 +215,14 @@ hr {
 }
 
 @media screen and (max-width: 700px) {
+  header img {
+    height: 3rem;
+  }
+
   ul {
     padding-top: 30vh;
     font-size: 3rem;
-    position: absolute;
+    position: fixed;
     z-index: 5;
     top: 0;
     right: 0;
@@ -228,6 +231,11 @@ hr {
     flex-direction: column;
     box-shadow: -50vw 0 rgba(0, 0, 0, 0.5);
   }
+
+  .nav-link {
+    margin: 1rem 3.5rem;
+  }
+
   .hero-text {
     grid-template-columns: 1fr;
   }
