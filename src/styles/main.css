@@ -16,6 +16,22 @@
   --clr-dark-blue: hsl(240, 100%, 5%);
 }
 
+.hover:hover {
+  cursor: pointer;
+}
+
+.hover-red:hover {
+  color: var(--clr-red);
+}
+
+.hover-orange:hover {
+  color: var(--clr-orange);
+}
+
+p {
+  color: var(--clr-dark-grayish-blue);
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -39,7 +55,6 @@ body {
   letter-spacing: 1px;
   background-color: var(--clr-off-white);
   color: var(--clr-dark-blue);
-  min-height: 100vh;
 }
 
 #root {
@@ -63,7 +78,7 @@ ul {
   display: inline-block;
   padding-block: 1rem;
   padding-left: 3.5rem;
-  color: var(--clr-dark-blue);
+  color: var(--clr-dark-grayish-blue);
   text-decoration: none;
 }
 
@@ -102,6 +117,11 @@ ul {
   letter-spacing: 4px;
   font-weight: 700;
   background-color: var(--clr-red);
+  color: var(--clr-off-white);
+
+  &:hover {
+    background-color: var(--clr-dark-blue);
+  }
 }
 
 aside {
@@ -118,6 +138,7 @@ aside {
 
 aside h2 {
   font-size: 3.7rem;
+  color: var(--clr-orange);
 }
 
 hr {
@@ -136,6 +157,7 @@ hr {
   margin-top: 1.5rem;
   line-height: 1.5;
   letter-spacing: 0;
+  color: var(--clr-grayish-blue);
 }
 
 .bottom-section {
@@ -196,16 +218,41 @@ hr {
     height: 3rem;
   }
 
-  header nav {
-    display: none;
-    position: absolute;
-  }
-
   .top-section {
     margin-top: 2.8rem;
   }
 
+  .menu-btn {
+    position: relative;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+    width: 5rem;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--clr-off-white);
+    box-shadow: -30vw 0 rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    padding-top: 30vh;
+    font-size: 2rem;
+  }
+
   .hero-text {
+    margin-top: 2rem;
     grid-template-columns: 1fr;
+  }
+
+  .hero-text h2 {
+    font-size: 4.2rem;
+  }
+
+  .hero-text a {
+    margin-top: 4rem;
   }
 }
